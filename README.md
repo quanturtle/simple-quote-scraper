@@ -11,7 +11,7 @@ cd simple-quote-scraper
 sudo docker build -t scraper .
 ```
 
-Run container
+Run container, you must have a `postgresql` database running on `localhost`
 ```
-sudo docker run scraper
+sudo docker run --net=host scraper
 ```

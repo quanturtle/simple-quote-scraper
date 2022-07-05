@@ -4,9 +4,7 @@ RUN pip install --upgrade pip
 RUN apt-get update -y
 
 COPY . /app
-WORKDIR /app
-
-EXPOSE 420
+WORKDIR /app/src
 
 RUN pip install -r requirements.txt
 
